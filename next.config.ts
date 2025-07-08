@@ -1,0 +1,25 @@
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  output: "standalone",
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: "/",
+          destination: "/index.html",
+        },
+        {
+          source: "/404",
+          destination: "/404.html",
+        },
+        {
+          source: "/401",
+          destination: "/401.html",
+        },
+      ],
+    };
+  },
+};
+
+export default nextConfig;
