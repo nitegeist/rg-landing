@@ -2509,6 +2509,23 @@ a {
 	}
 }
 
+@media screen and (max-width: 1366px) {
+	.h1.hero-logo-text {
+		letter-spacing: -1.72px;
+		font-size: clamp(172px, 14vw, 280px);
+		line-height: 80%;
+	}
+
+	.footer-large-text {
+		font-size: clamp(172px, 14vw, 280px);
+	}
+
+	.container {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+}
+
 @media screen and (max-width: 991px) {
 	body {
 		cursor: auto;
