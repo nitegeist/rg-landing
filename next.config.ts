@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
           destination: "/index.html",
         },
         {
+          source: "/raid",
+          destination: "/raid.html",
+        },
+        {
           source: "/404",
           destination: "/404.html",
         },
